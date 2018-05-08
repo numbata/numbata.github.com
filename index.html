@@ -56,6 +56,19 @@
 	h3{
 		font:1.3em 'Open Sans', sans-serif;
 	}
+        @media print {
+		a[href]:after {
+			content: " (" attr(href) ")";
+		}
+		a { text-decoration: none };
+		h4 {
+			font:1em 'Open Sans', sans-serif;
+			text-decoration: underline;
+		}
+		h4.org {
+			text-decoration: none;
+		}
+}
 	</style>
 </head>
 <body>
@@ -202,6 +215,8 @@
 			<ul class="other-list">
 				<li class="other-item">
 					<h3>Выступления</h3>
+					<h4>DevConf, 2013</h4>
+					<p>Доклад "Основы отладки Rails приложений"</p>
 					<h4>Конференция 404fest, 2008</h4>
 					<p>Рассказывал, что такое nginx, memcached, tmpfs и как их готовить;</p>
 					<h4>ULCAMP::Dev №6, 2011</h4>
