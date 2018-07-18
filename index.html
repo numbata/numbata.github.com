@@ -58,7 +58,7 @@
 	  	font: 1.3em 'Open Sans', sans-serif;
 	  }
 	  @media print {
-		a[href]:not([href^="mailto"]):after {
+		a[href]:not([href^="mailto"]):not([href^="tel"]):after {
 			content: " (" attr(href)")";
 	  	}
 	  	h4 {
