@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
+	<title>Andrei Subbota</title>
+  <meta charset="utf-8" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Андрей Суббота</title>
-	<meta name="description" content="Больше радости и хороших штук!" />
-	<meta name="keywords" content="ruby, rails, portfolio" />
-	<link rel="stylesheet" type="text/css" href="//yui-s.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
-	<link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,cyrillic&amp;text=ЗКТОПабвгезиклнопртхчыя%20 ' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400&amp;subset=latin,cyrillic&amp;text="(),-.0123456789:;@ABCDEFGHIJLMNOPQRSTUVWXabcdefghiklmnoprstuvwxyzАБВГДЖЗИКМНОПРСТУФЯабвгдежзийклмнопрстуфхцчшщыьюяё—№' rel='stylesheet' type='text/css'>
-	<style type="text/css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Mroe fun and epics!" />
+	<meta name="keywords" content="ruby, rails, portfolio, cv" />
+  <link rel="stylesheet" type="text/css" href="//yui-s.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css" />
+  <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,cyrillic&amp;text=ECOdhuxpsaoterinc%20 ' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400&amp;subset=latin,cyrillic&amp;text="(),-.0123456789:;@ABCDEFGHIJLMNOPQRSTUVWXabcdefghiklmnoprstuvwxyzАБВГДЖЗИКМНОПРСТУФЯабвгдежзийклмнопрстуфхцчшщыьюяё—№' rel='stylesheet' type='text/css' />
+  <style type="text/css">
 	  body {
 	  	font-family: 'Open Sans', sans-serif;
 	  	font-size: 0.8em;
@@ -29,6 +31,21 @@
 	  	margin: 0px auto;
 	  	padding: 50px 10px 10px 6.3em;
 	  }
+    #abstract h2 {
+      display: none;
+    }
+    .links ul {
+      list-style: none;
+    }
+    .links li {
+      display: inline;
+    }
+    .links li:after {
+      content: ', ';
+    }
+    .links li:last-child:after {
+      content: '.';
+    }
 	  .skill-list {
 	  	padding-top: 0.35em;
 	  }
@@ -37,7 +54,7 @@
 	  }
 	  .skill-item,
 	  .expirience-item .expirience .date,
-	  .expirience .org {
+	  .expiriences .org {
 	  	display: inline;
 	  }
 	  .block {
@@ -57,195 +74,155 @@
 	  h3 {
 	  	font: 1.3em 'Open Sans', sans-serif;
 	  }
+    .links li.onlyprint { display: none; }
 	  @media print {
-		a[href]:not([href^="mailto"]):not([href^="tel"]):after {
-			content: " (" attr(href)")";
+		  a[href]:not([href^="mailto"]):not([href^="tel"]):after {
+			  content: ": " attr(href)"";
 	  	}
 	  	h4 {
 	  	  font-size: 1.1em;
 	  	}
-		h4:not([class*="org"]):after {
-			content: ":";
-		}
-	  	h4.org,
-	  	a {
-	  		text-decoration: none;
-	  	}
-		.noprint { display: none }
-	}
+		  h4:not([class*="org"]):after {
+		  	content: ":";
+		  }
+		  h4.org,
+	 	  a {
+	    	text-decoration: none;
+	 	  }
+      .links li.onlyprint,
+      .links li { display: list-item; }
+      .links li:after { content: ';' }
+      .links li:last-child:after { content: '.' }
+      .links li.noprint,
+		  .noprint { display: none }
+    }
 	</style>
 </head>
 <body>
-	<div class="vcard-my vcard body">
-		<div class="block">
-			<p class="vcard-avatar"><img src="//www.gravatar.com/avatar/aa378bad44eb16e0530a76c0ddb4f0b5.png?" class="photo" alt="My avatar" /></p>
-      <p class="vcard-about"><span class="noprint">Привет!&nbsp;</span>Меня зовут <span class="fn n"><span class="given-name">Андрей</span> <!-- <span class="nickname">"Numbata"</span>--><span class="family-name">Суббота</span></span>.</p>
-			<p class="vcard-note">В основном пишу на Ruby, посматриваю в сторону Elixir. По работе приходилось разбирать задачи различных легаси проектов на разных языках, приводить их в поддерживаемое состояние (покрытие тестами, контейнеризация, обновление кодовой базы). В новых проектах принимаю участие на этапах планирования архитектуры, постановки задача и написания кода. Изредка пишу пет-проекты на Nim.</p>
-		</div>
-		<div class="contact block">
-			<h2>Контакты</h2>
-			<ul class="contact-list">
-				<li class="contact-item">
-					<h3>Живое общение</h3>
-					<h4>Мобильный</h4>
-					<!-- <p class="tel">+7&nbsp;(987)&nbsp;685-67-40</p> -->
-					<p><a class="tel" href="tel:+35795575417">+357&nbsp;95&nbsp;575-417</a><p>
-					<h4>Email</h4>
-					<p><a class="email" href="mailto:subbota@gmail.com">subbota@gmail.com</a>
-				</li>
-				<li class="contact-item">
-					<h3>Мои интернеты</h3>
-					<p>
-						<!-- <a href="http://friendfeed.com/numbata">FriendFeed</a>, -->
-						<a href="https://github.com/numbata/">GitHub</a>,
-						<a href="https://www.linkedin.com/in/andreysubbota">LinkedIn</a>,
-						<span class="noprint"><a href="http://instagram.com/numbata">Instagram</a>,</span>
-						<a href="http://www.facebook.com/numbata">Facebook</a>,
-						<a href="http://fim.moikrug.ru/">МоиКруг</a>.
-					</p>
-				</li>
-			</ul>
-		</div>
-		<div class="expirience block">
-			<h2>Опыт работы</h2>
-			<ul class="expirience-list">
-				<li class="expirience-item vcard serverscom">
-					<h3 class="role">Программист</h3>
-					<h4 class="org"><a href="http://servers.com/" class="organization-name">Servers.com</a></h4>
-					<p class="date">Октябрь 2017 - <i>настоящее время</i></p>
-					<h4>Обязанности</h4>
-					<p>Поддержка внутренних сервисов. Внедрение фич в пользовательский портал. Рефакторинг.</p>
-					<h4>Достижения</h4>
-					<p>Реализовал веб-интерфейс для внутреннего сервиса - саппорт получил дополнительный инструмент диагностики.<p>
-				</li>
-				<li class="expirience-item vcard elementaree">
-					<h3 class="role">Программист</h3>
-					<h4 class="org"><a href="http://elementaree.ru/" class="organization-name">Elementaree</a></h4>
-					<p class="date">Январь 2017 - Октябрь 2017</p>
-					<h4>Обязанности</h4>
-					<p>Программирование, проведение собеседований, код ревью.</p>
-					<h4>Достижения</h4>
-					<p>Внедрение новых технологий, автоматизация выпуска релизов. Оптимизация и выравнивание инфраструктуры.</p>
-				</li>
-				<li class="expirience-item vcard restreampro">
-					<h3 class="role">Руководитель группы разработки (Ульяновск)</h3>
-					<h4 class="org"><a href="http://restream.pro/" class="organization-name">Рестрим</a></h4>
-					<p class="date">Январь 2015 - Январь 2017</p>
-					<h4>Обязанности</h4>
-					<p>Программирование, техлид проектов, проведение собеседований, менторство, код ревью, распеределение ресурсов между проектами.</p>
-					<h4>Достижения</h4>
-					<p>Рост штата с 5 до 60 человек в соответствии текущими проектными потребностями.<br />Организация в офисе курсов программирования открытых для всех желающих.<br />Участие в запуске проектов компании: <a href="http://webvyboryedg.ru/">Веб-выборы</a>, <a href="https://smotriege.ru/">Единый государственный экзамен</a>, <a href="https://itv.rt.ru/">Интерактивное ТВ</a>, <a href="http://turizm.sputnik.ru/">Спутник / Туризм</a>.<p>
-				</li>
-				<li class="expirience-item vcard undev">
-					<h3 class="role">Ведущий инженер-программист</h3>
-					<h4 class="org organization-name">Undev</h4>
-					<p class="date">Февраль 2014 - Декабрь 2014</p>
-					<h4>Обязанности</h4>
-					<p>Программирование, техлид проектов, проведение собеседований, менторство, код ревью.</p>
-				</li>
-				<li class="expirience-item vcard undev">
-					<h3 class="role">Олдскул-коде разгребатор и тестами покрыватор</h3>
-					<h4 class="org organization-name">Undev</span></h4>
-					<p class="date">Апрель 2012 - Декабрь 2014</p>
-					<h4>Обязанности</h4>
-					<p>Рефакторинг, поддержка и обновление легаси-проектов:<br />
-						- обновление кода с Ruby REE 1.8.7/1.9.x/2.x.x;<br />
-						- апгрейд с Rails 2.x/3.x (включая проекты с тонной самописных плагинов и гемов);<br />
-						- миграции с MySQL/MongoDB на PostgreSQL;<br />
-						- демонизация рутин;<br />
-						- покрытие тестами (spec/rspec/minitest/capybara);<br />
-						- добавление в проект полезностей: capify, ansible config, Vagrantfile, прочее.</p>
-					<h4>Достижения</h4>
-			    <p>Сокращение издержек на поддержку легаси-проектов.<p>
-					<p>(Собственные) сменил с php на ruby, с mysql на postgres, с PhpStorm/RubyMine на VIM и много других позитивных изменений.</p>
-					<h4>Проекты</h4>
-					<p>http://telemarker.ru, http://vybory.mos.ru/, http://smotriege.ru/</p>
-				</li>
-				<li class="expirience-item vcard parcsis">
-					<h3 class="role">Ведущий инженер-программист</h3>
-					<h4 class="org"><a href="http://about.pravo.ru/" class="organization-name">СПС Право.ру</a></h4>
-					<p class="date">Октябрь 2010 — Апрель 2012</p>
-					<h4>Обязанности</h4>
-					<p>Ответственный за выпуск релизов docs.pravo.ru, коммуникация различных отделов (в том числе и удаленных), проверка технический требований на новый функционал, проведение собеседований</p>
-					<h4>Достижения</h4>
-					<p>Успешно запустили в продакшн docs.pravo.ru. Пережили без потерь пару технических сбоев и одно удаление продакшн базы данных.</p>
-					<h4>Проекты</h4>
-					<p>docs.pravo.ru</p>
-				</li>
-				<li class="expirience-item vcard parcsis">
-					<h3 class="role">Инженер-программист</h3>
-					<h4 class="org"><a href="http://about.pravo.ru/" class="organization-name">СПС Право.ру</a></h4>
-					<p class="date">Январь 2010 — Сентябрь 2010</p>
-					<h4>Обязанности</h4>
-					<p>Серверсайд-программирование, постановка и приоритезация задач.</p>
-					<h4>Достижения</h4>
-					<p>Разработал систему семантического анализа текста и связывания юридических документов (законы, судебные решения, кодексы).</p>
-				</li>
-				<li class="expirience-item vcard plusmedia noprint">
-					<h3 class="role">Веб-разработчик</h3>
-					<h4 class="org"><a href="http://www.plusmedia.ru/" class="organization-name">Plusmedia</a></h4>
-					<p class="date">Август 2007 — Декабрь 2009</p>
-					<h4>Обязанности</h4>
-					<p>Проектирование, программирование, оптимизация скриптов и баз данных компании, настройка серверов.</p>
-					<h4>Достижения</h4>
-					<p>Релиз портала samara24.ru, интранет-сервисы компании, внедрены memcached, nginx, система контроля версий.</p>
-				</li>
-				<li class="expirience-item vcard blackbox noprint">
-					<h3 class="role">Веб-программист</h3>
-					<h4 class="org" class="organization-name">BlackBox</h4>
-					<p class="date">Декабрь 2004 — Август 2007</p>
-					<h4>Обязанности</h4>
-					<p>Фронтенд и серверное программирование сайтов, техническая поддержка клиентских сайтов, администрирование web-серверов компании</p>
-					<h4>Достижения</h4>
-					<p>Внедрение wiki-технологий для хранения внутренней документации, разработан и внедрён фреймворк для клиентских сайтов.</p>
-				</li>
-				<li class="expirience-item vcard volgainfo noprint">
-					<h3 class="role">Веб-программист</h3>
-					<h4 class="org"><a href="http://www.volgainfo.net/" class="organization-name">ИС ВолгаИнфо</a></h4>
-					<p class="date">Сентябрь 2001 — Ноябрь 2004</p>
-					<h4>Обязанности</h4>
-					<p>Разработка портала volgainfo.net</p>
-					<h4>Достижения</h4>
-					<p>Релиз портала volgainfo, интранет-сервисы</p>
-				</li>
-			</ul>
-		</div>
-		<div class="education block">
-			<h2>Образование</h2>
-			<ul class="education-list">
-				<li class="education-item">
-					<h3>Специалист</h3>
-					<p class="org organization-name">СамГУ-Самара (Самарский государственный университет)</p>
-					<p>ф-т Механико-математический</p>
-					<p class="date">2000 — 2006</p>
-					<h4>Специальность</h4>
-					<p>Компьютерная безопасность</p>
-					<h4>Тема дипломной работы</h4>
-					<p>"Метрическое представление текста"</p>
-				</li>
-			</ul>
-		</div>
+  <article>
+	<div class="vcard-my vcard body h-resume cv">
+    <section id="abstract">
+      <h2>Summary</h2>
+      <div class="block">
+        <p class="vcard-avatar"><img src="//www.gravatar.com/avatar/aa378bad44eb16e0530a76c0ddb4f0b5.png?" class="photo" alt="My avatar" /></p>
+        <p class="vcard-about"><span class="noprint">Hi!&nbsp;</span>I'm <span class="fn n p-name"><span class="given-name">Andrei</span> <!-- <span class="nickname">"Numbata"</span>--><span class="family-name">Subbota</span></span>.</p>
+        <p class="vcard-note">
+          Ruby developer with interests in Elixir and Nimlang. In new projects I can take role of architect, technical lead or just developer.
+          Also, I'm not afraid of not-my-own code and easily do refactor of legacy projects (bump using ruby, upgrade gems, update code, up spec coverage).
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+		  <div class="contact h-card block">
+		  	<h2>Contacs</h2>
+		  	<ul class="contact-list">
+		  		<li class="contact-item">
+		  			<h4>Mobile</h4>
+		  			<p><a class="tel" href="tel:+35795575417">+357&nbsp;95&nbsp;575-417</a></p>
+		  			<h4>Email</h4>
+            <p><a class="email" href="mailto:subbota@gmail.com">subbota@gmail.com</a></p>
+		  			<h4>Skype</h4>
+            <p><a class="skype" href="skype:subbota_gmail.com">subbota_gmail.com</a></p>
+		  		</li>
+		  		<li class="contact-item links">
+		  			<h3>Links</h3>
+            <ul>
+              <li class="onlyprint"><a href="https://www.numbata.com/">Personal page</a></li>
+              <li><a href="https://github.com/numbata/">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/andreysubbota">LinkedIn</a></li>
+              <li class="noprint"><a href="http://instagram.com/numbata">Instagram</a></li>
+              <li><a href="http://www.facebook.com/numbata">Facebook</a></li>
+            </ul>
+		  		</li>
+		  	</ul>
+		  </div>
+    </section>
+    <section id="expirience">
+		  <div class="expiriences p-experience block">
+		  	<h2>Experience</h2>
+		  	<ul class="expirience-list">
+		  		<li class="expirience-item vcard h-card expirience serverscom">
+		  			<h3 class="role">Backend developer</h3>
+		  			<h4 class="org"><a href="http://servers.com/" class="fn organization-name">Servers.com</a></h4>
+		  			<p class="date">October 2017 &mdash; <i>Present</i></p>
+            <p>Internal services support. Code refactoring. Ruby programming.</p>
+		  		</li>
+		  		<li class="expirience-item vcard expirience elementaree">
+		  			<h3 class="role">IT Engeneer</h3>
+		  			<h4 class="org"><a href="http://elementaree.ru/" class="fn organization-name">Elementaree</a></h4>
+		  			<p class="date">January 2017 - October 2017</p>
+            <p>Developers infrastructure refactoring. Internal services developing. Implemented continuous deployment.</p>
+		  		</li>
+		  		<li class="expirience-item vcard expirience restreampro">
+		  			<h3 class="role">Technical Lead</h3>
+		  			<h4 class="org"><a href="http://restream.pro/" class="fn organization-name">Restream</a></h4>
+		  			<p class="date">January 2015 - January 2017</p>
+            <p><a href="http://webvyboryedg.ru/">Election CCTV</a>, <a href="https://smotriege.ru/">Unified State Exam CCTV</a>,
+            <a href="https://itv.rt.ru/">Rostelecom iTV</a>, <a href="http://turizm.sputnik.ru/">Sputnik / Tourism</a>.</p>
+            <p>Technical lead of several subproject commands (each up to 5 people). Interviewing, code refactoring. Project rescuer and 'rubber duck' for coworkers.</p>
+		  		</li>
+		  		<li class="expirience-item vcard expirience undev">
+		  			<h3 class="role">Team Lead</h3>
+		  			<h4 class="org fn organization-name">Undev</h4>
+		  			<p class="date">February 2014 - December 2014</p>
+            <p>- Review of new tasks requirements;<br />
+               - interviewing;<br />
+               - technical lead of RoR-projects;<br />
+               - ruby programmer;<br />
+               - code review.</p>
+		  		</li>
+		  		<li class="expirience-item vcard expirience undev">
+		  			<h3 class="role">Legacy code healer and rspec coverage master</h3>
+		  			<h4 class="org fn organization-name">Undev</h4>
+		  			<p class="date">April 2012 - December 2014</p>
+		  			<p>http://telemarker.ru, http://vybory.mos.ru/, http://smotriege.ru/</p>
+            <p>Refactoring, support and update legacy code:<br />
+		  				 - up code base from Ruby REE 1.8.7/1.9.x/2.x.x;<br />
+               - upgrade from Rails 2.x/3.x (with a lot of custom plugins and "no_one_known_how_it_work" gems);<br />
+		  				 - database migration from MySQL and MongoDB to PostgreSQL;<br />
+               - demonize routines;<br />
+		  				 - up code coverage (spec/rspec/minitest/capybara);<br />
+		  				 - implement useful stuff: capify, ansible, Vagrantfile, docker, etc.</p>
+		  		</li>
+		  	</ul>
+        <p class="noprint">(&nbsp;<a href="https://www.linkedin.com/in/andreysubbota/">More my experiences</a>&nbsp;)</p>
+		  </div>
+    </section>
+    <section id="education">
+		  <div class="education block">
+		  	<h2>Education</h2>
+		  	<ul class="education-list">
+		  		<li class="education-item">
+		  			<h3>BS, Mathematic</h3>
+		  			<p class="org organization-name">Samara State University</p>
+		  			<p class="date">2000 &mdash; 2006</p>
+            <p>Thesis: Application on metric model of text.</p>
+		  		</li>
+		  	</ul>
+		  </div>
+    </section>
 		<div class="other block">
-			<h2>Прочее</h2>
+			<h2>Other</h2>
 			<ul class="other-list">
 				<li class="other-item">
-					<h3>Выступления</h3>
+					<h3>Speeches</h3>
 					<h4>DevConf, 2013</h4>
-					<p>Доклад "Основы отладки Rails приложений"</p>
-					<h4>Конференция 404fest, 2008</h4>
-					<p>Рассказывал, что такое nginx, memcached, tmpfs и как их готовить;</p>
+					<p>Basics of RoR app debugging.</p>
+					<h4>404fest conference, 2008</h4>
+					<p>I told about nginx, memcached, tmpfs and other useful things.</p>
 					<h4>ULCAMP::Dev №6, 2011</h4>
-					<p>Доклад "Ссылки в нормативных документах. Сбор и хранение."</p>
+          <p>Cross-links in law documents. Collect and store.</p>
 				</li>
 				<li class="other-item">
-					<h3>Иностранные языки</h3>
-					<h4>Русский</h4>
-					<p>Родной</p>
-					<h4>Английский</h4>
+					<h3>Languages</h3>
+					<h4>Russian</h4>
+					<p>Native</p>
+					<h4>English</h4>
 					<p>Can read freely, write well, speak not well</p>
 				</li>
 			</ul>
 		</div>
 	</div>
+  </article>
 </body>
 </html>
