@@ -8,7 +8,7 @@
 	<meta name="description" content="Mroe fun and epics!" />
 	<meta name="keywords" content="ruby, rails, portfolio, cv" />
   <link rel="stylesheet" type="text/css" href="//yui-s.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css" />
-  <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,cyrillic&amp;text=ECOdhuxpsaoterinc%20 ' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,cyrillic&amp;text=ECOSdhuxpsmyaoterinc%20 ' rel='stylesheet' type='text/css' />
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400&amp;subset=latin,cyrillic&amp;text="(),-.0123456789:;@ABCDEFGHIJLMNOPQRSTUVWXabcdefghiklmnoprstuvwxyzАБВГДЖЗИКМНОПРСТУФЯабвгдежзийклмнопрстуфхцчшщыьюяё—№' rel='stylesheet' type='text/css' />
   <style type="text/css">
 	  body {
@@ -76,6 +76,18 @@
 	  }
     .links li.onlyprint { display: none; }
 	  @media print {
+      .body {
+              width: 100%;
+      }
+      #abstract h2 {
+              display: block;
+      }
+      h2 {
+        float: none;
+        border-bottom: 1px solid #bbb;
+        width: 100%;
+      }
+      .vcard-avatar{display: none}
 		  a[href]:not([href^="mailto"]):not([href^="tel"]):after {
 			  content: ": " attr(href)"";
 	  	}
@@ -89,6 +101,16 @@
 	 	  a {
 	    	text-decoration: none;
 	 	  }
+      .block>ul>li {
+              padding-left: 15em;
+                      position: relative;
+      }
+      .expirience-item .date {
+        position: absolute;
+        top: 0px;
+                left: 0px;
+        width: 15em;
+      }
       .links li.onlyprint,
       .links li { display: list-item; }
       .links li:after { content: ';' }
