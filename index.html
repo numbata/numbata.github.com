@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Andrei Subbota - Professional CV" />
     <meta property="og:description" content="Software Engineer with expertise in Ruby, Rails and more" />
@@ -246,26 +247,26 @@
 
 <body>
     <!-- Header with photo, name and contact information -->
-    <header>
+    <header class="h-card">
         <div class="photo-container">
-            <img src="https://www.gravatar.com/avatar/aa378bad44eb16e0530a76c0ddb4f0b5.png" alt="Andrey Subbota">
+            <img src="https://www.gravatar.com/avatar/aa378bad44eb16e0530a76c0ddb4f0b5.png" alt="Andrey Subbota" class="u-photo">
         </div>
         <div class="header-info">
-            <h1>Andrey Subbota</h1>
+            <h1 class="p-name">Andrey Subbota</h1>
             <div class="contact-info">
                 <p>
-                    <strong>Email:</strong> <a href="mailto:subbota@gmail.com">subbota@gmail.com</a> |
-                    <strong>Phone:</strong> +46 791 014909 |
-                    <strong>Location:</strong> Stockholm, Sweden
+                    <strong>Email:</strong> <a href="mailto:subbota@gmail.com" class="u-email">subbota@gmail.com</a> |
+                    <strong>Phone:</strong> <span class="p-tel">+46 791 014909</span> |
+                    <strong>Location:</strong> <span class="p-locality">Stockholm</span>, <span class="p-country-name">Sweden</span>
                 </p>
             </div>
         </div>
     </header>
 
     <!-- Professional summary -->
-    <section>
+    <section class="h-resume">
         <h2>Senior Backend Engineer</h2>
-        <div class="summary">
+        <div class="summary p-summary">
             <p>Software engineer with over 15 years of experience in Ruby, including Ruby on Rails, and backend
                 development in general. Focused on building scalable applications, improving system performance, and
                 mentoring developers. Interested in clean code, best practices, and maintainable solutions.</p>
@@ -276,33 +277,33 @@
     <section>
         <h2>Work Experience</h2>
 
-        <div class="job">
+        <div class="job p-experience">
             <div class="job-title">
-                <h3>Mentimeter (Stockholm, Sweden) | Senior Ruby Developer</h3>
-                <span class="job-date">October 2021 – Present</span>
+                <h3><span class="p-org">Mentimeter</span> (<span class="p-locality">Stockholm</span>, <span class="p-country-name">Sweden</span>) | <span class="p-job-title">Senior Ruby Developer</span></h3>
+                <span class="job-date"><span class="dt-start">October 2021</span> – <span class="dt-end">Present</span></span>
             </div>
-            <p>Worked on improving system architecture by identifying key bottlenecks and proposing scalable solutions.
+            <p class="p-description">Worked on improving system architecture by identifying key bottlenecks and proposing scalable solutions.
                 Provided technical mentorship to engineers and supported cross-team collaboration by sharing knowledge
                 and best practices. Suggested structural changes to enhance team ownership and workflow efficiency.</p>
         </div>
 
         <div class="divider"></div>
 
-        <div class="job">
+        <div class="job p-experience">
             <div class="job-title">
-                <h3>Servers.com (Limassol, Cyprus) | Backend Developer</h3>
-                <span class="job-date">October 2017 – September 2021</span>
+                <h3><span class="p-org">Servers.com</span> (<span class="p-locality">Limassol</span>, <span class="p-country-name">Cyprus</span>) | <span class="p-job-title">Backend Developer</span></h3>
+                <span class="job-date"><span class="dt-start">October 2017</span> – <span class="dt-end">September 2021</span></span>
             </div>
-            <p>Maintained and improved internal services by refactoring legacy code, optimizing performance, and
+            <p class="p-description">Maintained and improved internal services by refactoring legacy code, optimizing performance, and
                 ensuring system stability. Focused on Ruby development, troubleshooting existing functionality, and
                 implementing incremental enhancements to improve efficiency and maintainability.</p>
         </div>
 
         <div class="divider"></div>
 
-        <div class="job">
+        <div class="job p-experience">
             <h3>Previous Experience</h3>
-            <p>Before <strong>Servers.com</strong>, I worked as a <strong>Backend Engineer and Technical Lead</strong>
+            <p class="p-description">Before <strong>Servers.com</strong>, I worked as a <strong>Backend Engineer and Technical Lead</strong>
                 in various companies, focusing on <strong>Ruby development, system architecture, and infrastructure
                     improvements</strong>. I have experience leading teams, optimizing performance, and refactoring
                 legacy systems. My background includes <strong>mentoring developers, implementing scalable solutions,
@@ -314,26 +315,28 @@
     <section>
         <h2>Languages</h2>
         <ul>
-            <li><strong>English</strong> – Professional working proficiency</li>
-            <li><strong>Russian</strong> – Native</li>
+            <li class="p-skill"><strong>English</strong> – Professional working proficiency</li>
+            <li class="p-skill"><strong>Russian</strong> – Native</li>
         </ul>
     </section>
 
     <!-- Education -->
     <section>
         <h2>Education</h2>
-        <h3>Samara State University</h3>
-        <p><strong>BSc in Mathematics (2006)</strong><br>
-            Thesis: <em>Application on Metric Model in Text Processing</em></p>
+        <div class="p-education">
+            <h3 class="p-name">Samara State University</h3>
+            <p><strong class="p-description">BSc in Mathematics (2006)</strong><br>
+                Thesis: <em>Application on Metric Model in Text Processing</em></p>
+        </div>
     </section>
 
     <!-- Professional interests -->
     <section>
         <h2>Professional Interests</h2>
         <ul>
-            <li>System performance tuning & scalability, refactoring.</li>
-            <li>Mentoring and team development</li>
-            <li>Exploring new backend technologies</li>
+            <li class="p-skill">System performance tuning & scalability, refactoring.</li>
+            <li class="p-skill">Mentoring and team development</li>
+            <li class="p-skill">Exploring new backend technologies</li>
         </ul>
     </section>
 </body>
