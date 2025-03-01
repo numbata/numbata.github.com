@@ -29,11 +29,54 @@
   "name": "Andrei Subbota",
   "url": "https://numbata.github.com/",
   "image": "https://numbata.github.com/andrei_subbota.jpg",
-  "jobTitle": "Software Engineer",
+  "jobTitle": "Senior Backend Engineer",
   "worksFor": {
     "@type": "Organization",
-    "name": "Mentimeter"
+    "name": "Mentimeter",
+    "url": "https://www.mentimeter.com"
   },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Samara State University",
+    "sameAs": "https://ssau.ru/english"
+  },
+  "knowsAbout": [
+    "Ruby",
+    "Ruby on Rails",
+    "Grape",
+    "RESTful API design",
+    "PostgreSQL",
+    "MySQL",
+    "Microservices architecture",
+    "Domain-driven design",
+    "Performance Optimization",
+    "Software Engineering"
+  ],
+  "workExperience": [
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Senior Ruby Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Mentimeter",
+        "url": "https://www.mentimeter.com"
+      },
+      "startDate": "2021-10",
+      "description": "Work on improving system architecture by identifying key bottlenecks and proposing scalable solutions. Provide technical mentorship to engineers and support cross-team collaboration."
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Backend Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Servers.com",
+        "url": "https://www.servers.com"
+      },
+      "startDate": "2017-10",
+      "endDate": "2021-09",
+      "description": "Maintained and improved internal services by refactoring legacy code, optimizing performance, and ensuring system stability."
+    }
+  ],
   "sameAs": [
     "https://www.linkedin.com/in/andreisubbota",
     "https://github.com/numbata"
@@ -316,11 +359,10 @@
                         class="p-country-name">Sweden</span>
                 </p>
                 <p class="social-links">
-                    <a href="https://github.com/numbata" class="u-url" target="_blank" rel="noopener"><img
+                    <a href="https://github.com/numbata" class="u-url" rel="me noopener" target="_blank"><img
                             src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub" width="16"
                             height="16"> GitHub</a>
-                    <a href="https://www.linkedin.com/in/andreisubbota" class="u-url" target="_blank"
-                        rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg"
+                    <a href="https://www.linkedin.com/in/andreisubbota" class="u-url" rel="me noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg"
                             alt="LinkedIn" width="16" height="16"> LinkedIn</a>
                 </p>
             </div>
@@ -329,7 +371,7 @@
 
     <!-- Professional summary -->
     <section class="h-resume">
-        <h2>Senior Backend Engineer</h2>
+        <h2 class="p-job-title">Senior Backend Engineer</h2>
         <div class="summary p-summary">
             <p>Software engineer with over 13 years of experience in Ruby, including Ruby on Rails, and backend
                 development in general. Focused on building scalable applications, improving system performance, and
@@ -358,13 +400,13 @@
     <section>
         <h2>Work Experience</h2>
 
-        <div class="job p-experience">
+        <div class="job p-experience h-event">
             <div class="job-title">
-                <h3><span class="p-org">Mentimeter</span> (<span class="p-locality">Stockholm</span>, <span
-                        class="p-country-name">Sweden</span>) | <span class="p-job-title">Senior Ruby Developer</span>
+                <h3><span class="p-org h-card"><a href="https://www.mentimeter.com" class="u-url" target="_blank">Mentimeter</a></span> (<span class="p-locality">Stockholm</span>, <span
+                        class="p-country-name">Sweden</span>) | <span class="p-job-title p-name">Senior Ruby Developer</span>
                 </h3>
-                <span class="job-date"><span class="dt-start">October 2021</span> – <span
-                        class="dt-end">Present</span></span>
+                <span class="job-date"><time class="dt-start" datetime="2021-10">October 2021</time> – <time
+                        class="dt-end" datetime="present">Present</time></span>
             </div>
             <p class="p-description">Work on improving system architecture by identifying key bottlenecks and
                 proposing scalable solutions.
@@ -377,12 +419,12 @@
 
         <div class="divider"></div>
 
-        <div class="job p-experience">
+        <div class="job p-experience h-event">
             <div class="job-title">
-                <h3><span class="p-org">Servers.com</span> (<span class="p-locality">Limassol</span>, <span
-                        class="p-country-name">Cyprus</span>) | <span class="p-job-title">Backend Developer</span></h3>
-                <span class="job-date"><span class="dt-start">October 2017</span> – <span class="dt-end">September
-                        2021</span></span>
+                <h3><span class="p-org h-card"><a href="https://www.servers.com" class="u-url" target="_blank">Servers.com</a></span> (<span class="p-locality">Limassol</span>, <span
+                        class="p-country-name">Cyprus</span>) | <span class="p-job-title p-name">Backend Developer</span></h3>
+                <span class="job-date"><time class="dt-start" datetime="2017-10">October 2017</time> – <time class="dt-end" datetime="2021-09">September
+                        2021</time></span>
             </div>
             <p class="p-description">Maintained and improved internal services by refactoring legacy code, optimizing
                 performance, and ensuring system stability. Focused on Ruby development, troubleshooting existing
@@ -408,10 +450,10 @@
     <!-- Education -->
     <section>
         <h2>Education</h2>
-        <div class="p-education">
+        <div class="p-education h-event">
             <h3 class="p-name">Samara State University</h3>
-            <p><strong class="p-description">BSc in Mathematics (2006)</strong><br>
-                Thesis: <em>Application on Metric Model in Text Processing</em></p>
+            <p><strong class="p-description">BSc in Mathematics</strong> <time class="dt-end" datetime="2006">(2006)</time><br>
+                Thesis: <em class="p-summary">Application on Metric Model in Text Processing</em></p>
         </div>
     </section>
 
@@ -421,6 +463,57 @@
         <ul>
             <li class="p-skill"><strong>English</strong> – Professional working proficiency</li>
             <li class="p-skill"><strong>Russian</strong> – Native</li>
+        </ul>
+    </section>
+
+    <!-- Open Source Contributions -->
+    <section>
+        <h2>Open Source Contributions</h2>
+        <ul>
+            <li class="p-skill">
+                <strong><a href="https://github.com/ruby-grape/grape/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">Ruby Grape</a></strong> – Fixed critical bugs in parameter validation, error
+                handling, and route generation to improve API reliability.
+            </li>
+            <li class="p-skill">
+                <strong>
+                    <a href="https://github.com/ruby-grape/grape-swagger/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">Grape-Swagger</a> &amp;
+                    <a href="https://github.com/ruby-grape/grape-swagger-entity/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">Grape-Swagger-Entity</a>
+                </strong> – Enhanced OpenAPI documentation by refining request body schemas and enabling custom
+                extension metadata.
+            </li>
+            <li class="p-skill">
+                <strong><a href="https://github.com/rails/rails/pulls?q=is%3Apr+author%3Anumbata" target="_blank">Ruby
+                        on Rails</a></strong> – Patched ActiveRecord to support autosave callbacks in STI, ensuring
+                proper handling of nested attributes.
+            </li>
+            <li class="p-skill">
+                <strong><a href="https://github.com/sgruhier/capistrano-db-tasks/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">Capistrano DB Tasks</a></strong> – Added ENV variable support and configurable
+                compression, plus resolved configuration issues for seamless DB syncing.
+            </li>
+            <li class="p-skill">
+                <strong><a href="https://github.com/jeremyevans/sequel/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">Sequel</a></strong> – Optimized unique validations to reduce database load and
+                boost performance.
+            </li>
+            <li class="p-skill">
+                <strong><a href="https://github.com/splitwise/super_diff/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">SuperDiff</a></strong> – Resolved regex matching issues in RSpec diff outputs,
+                enhancing testing robustness.
+            </li>
+            <li class="p-skill">
+                <strong><a href="https://github.com/rubocop/rubocop-sequel/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">RuboCop-Sequel</a></strong> – Introduced default configurations that streamline
+                linting and enforce best practices.
+            </li>
+            <li class="p-skill">
+                <strong><a href="https://github.com/geminabox/geminabox/pulls?q=is%3Apr+author%3Anumbata"
+                        target="_blank">Geminabox</a></strong> – Updated support for RubyGems' compact index API,
+                ensuring continued compatibility and improved performance.
+            </li>
         </ul>
     </section>
 
