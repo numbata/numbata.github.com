@@ -17,7 +17,7 @@ jobs:
     - name: Generate PDF
       uses: misaelnieto/web_to_pdf_action@master
       with:
-        webPageURL: https://numbata.github.com/
+        webPageURL: https://www.numbata.com/
         outputFile: ./Andrei_Subbota_CV.pdf
         usePuppeteer: true
         useScreen: false  # Use print media for better PDF output
