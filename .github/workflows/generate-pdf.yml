@@ -1,0 +1,32 @@
+name: Generate PDF CV
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'index.html'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Generate PDF
+      uses: misaelnieto/web_to_pdf_action@master
+      with:
+        webPageURL: https://numbata.github.com/
+        outputFile: ./Andrei_Subbota_CV.pdf
+        usePuppeteer: true
+        useScreen: false  # Use print media for better PDF output
+        pdfOptions: '{"format": "A4", "margin": {"top": "0.5cm", "left": "0.5cm", "right": "0.5cm", "bottom": "0.5cm"}}'
+
+    - name: Commit and push PDF
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add "Andrei_Subbota_CV.pdf"
+        git commit -m "Update CV PDF" || echo "No changes to commit"
+        git push
